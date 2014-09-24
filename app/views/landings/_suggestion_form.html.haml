@@ -1,0 +1,4 @@
+= form_for @suggestion do |form|
+  = form.hidden_field :kind, value: type
+  = form.text_field :description, placeholder: "Ingresa tu #{type}"
+  = form.submit 'Agregar'

@@ -1,0 +1,14 @@
+.container
+  .row
+    .columns.small-3
+      %h2 Fraces
+      = render partial: 'suggestion_form', locals: { type: 'fraces'}
+      = link_to 'Random', random_suggestion_path('fraces')
+    .columns.small-3
+      %h2 Titulos
+      = render partial: 'suggestion_form', locals: { type: 'titulo'}
+      = link_to 'Random', random_suggestion_path('titulo')
+    .columns.small-3
+      %h2 Palabra
+      = render partial: 'suggestion_form', locals: { type: 'palabra'}
+      = link_to 'Random', random_suggestion_path('palabra')
